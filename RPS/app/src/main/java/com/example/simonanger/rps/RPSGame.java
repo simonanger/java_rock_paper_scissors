@@ -1,0 +1,39 @@
+package com.example.simonanger.rps;
+
+import java.util.EnumMap;
+import java.util.Map;
+import java.util.Random;
+
+/**
+ * Created by simonanger on 19/09/2017.
+ */
+
+public class RPSGame {
+    Map<HandType, HandType> winners = new EnumMap<>(HandType.class);
+
+    public RPSGame() {
+        winners.put(HandType.ROCK, HandType.SCISSORS);
+        winners.put(HandType.PAPER, HandType.ROCK);
+        winners.put(HandType.SCISSORS, HandType.PAPER);
+    }
+
+    public int playHand(HandType playerHand) {
+        if (playerHand == null) return -1;
+
+        HandType computerHand = generateComputerHand();
+
+        if (playerHand == computerHand) return 0;
+
+        if (winners.get(playerHand) == computerHand) return 1;
+
+        if (winners.get(computerHand) == playerHand) return 2;
+
+        return -1;
+    }
+
+    public HandType generateComputerHand() {
+        Random random = new Random();
+        int randomNumber = random.nextInt(3);
+        return HandType.values()[randomNumber];
+    }
+}
