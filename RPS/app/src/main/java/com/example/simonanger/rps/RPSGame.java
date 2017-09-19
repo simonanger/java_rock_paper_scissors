@@ -17,10 +17,8 @@ public class RPSGame {
         winners.put(HandType.SCISSORS, HandType.PAPER);
     }
 
-    public int playHand(HandType playerHand) {
+    public int playHand(HandType playerHand, HandType computerHand) {
         if (playerHand == null) return -1;
-
-        HandType computerHand = generateComputerHand();
 
         if (playerHand == computerHand) return 0;
 
