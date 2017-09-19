@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">RPS</string>
-    <string name="select_guide_text">Select your hand</string>
+    <string name="app_name">Rock Paper Scissors</string>
+    <string name="select_guide_text">Select your hand from an image above</string>
 </resources>
