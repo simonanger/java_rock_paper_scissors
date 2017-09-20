@@ -7,32 +7,21 @@
     tools:context="com.example.simonanger.rps.RPSActivity"
     android:background="#929284">
 
-    <TextView
-        android:id="@+id/instructions_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Instructions"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.502" />
-
     <Button
         android:id="@+id/begin_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="90dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
         android:onClick="onBeginButtonClicked"
         android:text="Begin"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instructions_text"
-        app:layout_constraintVertical_bias="0.467" />
+        tools:layout_editor_absoluteY="366dp" />
 
     <ImageView
         android:id="@+id/home_banner"
@@ -40,9 +29,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="8dp"
         android:padding="0dp"
-        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
